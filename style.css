@@ -246,7 +246,9 @@ section {
             rgba(23, 77, 54, 0.15),
             rgba(23, 77, 54, 0.15)
         ),
-        url("C:\All data\intership\freshcart-grocers\fresh fruit.PNG");
+        url("fresh\ fruit.PNG");
+
+        
 
     background-size: cover;
     background-position: center;
@@ -379,17 +381,27 @@ section {
    CATEGORIES
 ========================= */
 
+```css
+.category-section {
+    max-width: none;
+    background: #f1ecdf;
+
+    padding-left: max(24px, calc((100% - 1150px) / 2));
+    padding-right: max(24px, calc((100% - 1150px) / 2));
+}
+
 .category-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
+    gap: 20px;
 }
 
 .category-card {
     background: var(--white);
-    border: 1px solid var(--border);
     border-radius: 18px;
-    padding: 15px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+
     transition: 0.3s;
 }
 
@@ -398,50 +410,40 @@ section {
     box-shadow: 0 15px 35px rgba(23, 77, 54, 0.1);
 }
 
-.category-image {
+.category-card img {
+    width: 100%;
     height: 180px;
-    border-radius: 13px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
 
-    font-size: 70px;
-    margin-bottom: 18px;
-}
+    object-fit: cover;
+    object-position: center;
 
-.vegetables {
-    background: #e5efd9;
-}
-
-.fruits {
-    background: #f8dfd1;
-}
-
-.dairy {
-    background: #e1eaf0;
-}
-
-.bakery {
-    background: #f2e3c7;
+    border-radius: 18px 18px 0 0;
 }
 
 .category-card h3 {
     color: var(--green);
-    margin-bottom: 3px;
+    margin: 18px 20px 3px;
 }
 
 .category-card p {
     color: var(--text);
     font-size: 13px;
-    margin-bottom: 10px;
+
+    margin: 0 20px 10px;
 }
 
 .category-card a {
     color: var(--orange);
     font-weight: 700;
     font-size: 13px;
+
+    display: inline-block;
+    margin: 0 20px 20px;
 }
+```
+
 
 /* =========================
    PRODUCTS
@@ -596,13 +598,36 @@ section {
 .about-card small {
     color: var(--orange);
 }
+.about-visual {
+    position: relative;
+    min-height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
 
+    background-image:
+        linear-gradient(
+            rgba(23, 77, 54, 0.15),
+            rgba(23, 77, 54, 0.15)
+        ),
+        url("avocado.jfif");
+
+        
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 20px 50px rgba(23, 77, 54, 0.12);
+}
 .about-decoration {
     position: absolute;
     font-size: 130px;
     right: 30px;
     bottom: 20px;
-    transform: rotate(15deg);
+    transform: rotate(0deg);
 }
 
 .about-content > p {
@@ -679,37 +704,10 @@ section {
     font-size: 13px;
 }
 
-.visit-map {
-    min-height: 350px;
-    border-radius: 25px;
 
-    background: linear-gradient(
-        135deg,
-        #dce8d6,
-        #cbdcc7
-    );
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-    color: var(--green);
-}
 
-.map-pin {
-    font-size: 65px;
-    margin-bottom: 15px;
-}
-
-.visit-map span {
-    font-family: var(--heading);
-    font-size: 25px;
-}
-
-.visit-map small {
-    color: var(--text);
-}
 
 /* =========================
    FOOTER
