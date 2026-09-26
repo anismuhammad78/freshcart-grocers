@@ -248,8 +248,6 @@ section {
         ),
         url("fresh\ fruit.PNG");
 
-        
-
     background-size: cover;
     background-position: center;
 
@@ -381,7 +379,6 @@ section {
    CATEGORIES
 ========================= */
 
-```css
 .category-section {
     max-width: none;
     background: #f1ecdf;
@@ -442,8 +439,6 @@ section {
     display: inline-block;
     margin: 0 20px 20px;
 }
-```
-
 
 /* =========================
    PRODUCTS
@@ -598,6 +593,7 @@ section {
 .about-card small {
     color: var(--orange);
 }
+
 .about-visual {
     position: relative;
     min-height: 500px;
@@ -611,8 +607,6 @@ section {
         ),
         url("avocado.jfif");
 
-        
-
     background-size: cover;
     background-position: center;
 
@@ -622,6 +616,7 @@ section {
 
     box-shadow: 0 20px 50px rgba(23, 77, 54, 0.12);
 }
+
 .about-decoration {
     position: absolute;
     font-size: 130px;
@@ -703,11 +698,6 @@ section {
     color: var(--text);
     font-size: 13px;
 }
-
-
-
-
-
 
 /* =========================
    FOOTER
