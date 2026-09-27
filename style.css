@@ -1159,3 +1159,115 @@ section {
     grid-template-columns: 1fr;
 }
 }
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-section {
+    max-width: 700px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--green);
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: var(--body);
+    font-size: 15px;
+    color: var(--dark);
+
+    padding: 13px 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--white);
+
+    outline: none;
+    transition: 0.3s;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 3px rgba(23, 77, 54, 0.1);
+}
+
+.form-group.invalid input,
+.form-group.invalid textarea {
+    border-color: #d64545;
+}
+
+.form-group.valid input,
+.form-group.valid textarea {
+    border-color: var(--green-light);
+}
+
+.error-message {
+    color: #d64545;
+    font-size: 12px;
+    margin-top: 6px;
+    min-height: 16px;
+}
+
+#submitBtn {
+    align-self: flex-start;
+    border: none;
+    cursor: pointer;
+}
+
+#submitBtn:disabled {
+    background: var(--border);
+    color: var(--text);
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* =========================
+   TOAST
+========================= */
+
+.toast {
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%) translateY(20px);
+
+    background: var(--green);
+    color: var(--white);
+
+    padding: 14px 26px;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    box-shadow: 0 15px 35px rgba(23, 77, 54, 0.25);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: 0.35s;
+    z-index: 1100;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
