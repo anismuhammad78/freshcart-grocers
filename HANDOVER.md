@@ -26,7 +26,6 @@ FreshCart Grocers is a static, responsive landing page for a grocery brand, buil
 
 ## Known Issues / Outstanding Fixes
 
-* The corrected `index.html` (with the nav menu order fixed to Services → Pricing, and the footer "Explore" column updated to include Services and Pricing links) has been prepared but **has not yet been pushed to GitHub** — the live site still reflects the older nav order. This should be pushed before considering the task fully closed.
 * Some image filenames contain spaces (e.g. `fresh fruit.PNG`, `family friendly.jpg`). These currently work but are fragile — a future cleanup should rename them with hyphens and update all references in `index.html` and `style.css`.
 * The contact form does not currently send data anywhere (no backend or email service connected) — it only validates and shows a success toast. This is expected for a frontend-only internship project but should be noted if the client expects real emails.
 
