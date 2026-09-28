@@ -1,13 +1,15 @@
 # FreshCart Grocers
-
+ 
 A responsive grocery landing page created as part of my frontend web development internship at Ezitech.
-
+ 
+**Live Site:** https://anismuhammad78.github.io/freshcart-grocers/
+ 
 ## Project Overview
-
+ 
 FreshCart Grocers is a modern and responsive grocery website landing page designed to provide users with an easy and attractive way to explore fresh food products.
-
+ 
 The website includes:
-
+ 
 * Responsive navigation bar
 * Hero section with tagline
 * Product categories
@@ -21,17 +23,16 @@ The website includes:
 * Mobile responsive design
 * Smooth navigation between sections
 * Back-to-top button
-
 ## Technologies Used
-
+ 
 * HTML5
 * CSS3
 * JavaScript
 * Git
 * GitHub
-
+* GitHub Pages (hosting)
 ## Project Structure
-
+ 
 ```
 freshcart-grocers/
 ├── index.html
